@@ -1,13 +1,10 @@
-word_list = [
-    'wares',
-    'soup',
-    'mount',]
-
 
 
 
 def display_hangman(tries):
-    stages = [  # final state: head, torso, both arms, and both legs
+    """här är mallen för hänga gubben som ändras beronde 
+    på hur många försök man har kvar."""
+    stages = [  # 7
                 """
                    --------
                    |      |
@@ -17,7 +14,7 @@ def display_hangman(tries):
                    |     / \\
                    -
                 """,
-                # head, torso, both arms, and one leg
+                # 6
                 """
                    --------
                    |      |
@@ -27,7 +24,7 @@ def display_hangman(tries):
                    |     / 
                    -
                 """,
-                # head, torso, and both arms
+                 #5
                 """
                    --------
                    |      |
@@ -37,7 +34,7 @@ def display_hangman(tries):
                    |      
                    -
                 """,
-                # head, torso, and one arm
+                # 4
                 """
                    --------
                    |      |
@@ -47,7 +44,7 @@ def display_hangman(tries):
                    |     
                    -
                 """,
-                # head and torso
+                # 3
                 """
                    --------
                    |      |
@@ -57,7 +54,7 @@ def display_hangman(tries):
                    |     
                    -
                 """,
-                # head
+                # 2
                 """
                    --------
                    |      |
@@ -67,7 +64,7 @@ def display_hangman(tries):
                    |     
                    -
                 """,
-                # initial empty state
+                # 1
                 """
                    --------
                    |      |
@@ -79,3 +76,5 @@ def display_hangman(tries):
                 """
     ]
     return stages[tries]
+
+
